@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-  <widget id="com.ionicframework.xmpp607769" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.ionicframework.xmpp607769"
+        version   = "0.0.1">
   <name>XMPP Chat</name>
   <description>
         An Ionic Framework and Cordova project.
@@ -16,6 +21,8 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="android-minSdkVersion" value="14" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+  <preference name="android-build-tool" value="gradle" /> 
 
   <!-- Plugins -->
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
